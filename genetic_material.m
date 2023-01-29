@@ -13,30 +13,7 @@ max_iter = 500; %(number of iteration)
 eps = 300; sigma =3.5;
 % Genetic parameters
 ptour = 0.9;pcross = 0.5;% pmute = 0.0001;
-%% Define the grid
-%gridx = linspace(0,1,2^n+1)*cella;
-%gridy = gridx;gridz = gridx;
-% fractional grid
-% gridfx = linspace(0,1,2^n+1);
-% gridfy = gridfx;gridfz = gridfx;
-% % Convert grid lines to binary
-% gridfx(end)=[];gridfy(end)=[];gridfz(end)=[];
-% gridbx = de2bi( gridfx*2^n );gridby = gridbx; gridbz = gridbx;
-% % assign binary id to each point on the grid
-% lgx = length(gridfx); lgy = length(gridfy) ; lgz = length(gridfz);
-% pointid = zeros(lgx*lgy*lgz,n*3);
 
-% COncentrating all to make the DNA
-% cnt=0;
-% for i=1:lgx
-%     for j=1:lgy
-%         for k=1:lgz
-%             cnt= cnt+1;
-%             pointid(cnt,:) = [gridbx(i,:) gridby(j,:) gridbz(k,:)];
-%            
-%         end
-%     end
-% end
 
 
 %% Construction of initial random structures 
